@@ -334,7 +334,7 @@ class OrderItem implements ModelInterface, ArrayAccess, \JsonSerializable, \Iter
     const DEEMED_RESELLER_CATEGORY_CA_MPF = 'CA_MPF';
     const DEEMED_RESELLER_CATEGORY_AU_VOEC = 'AU_VOEC';
     const DEEMED_RESELLER_CATEGORY_NZ_VOEC = 'NZ_VOEC';
-    
+    const DEEMED_RESELLER_CATEGORY_SG_VOEC = 'SG_VOEC';
 
     /**
      * Gets allowable values of the enum
@@ -351,6 +351,7 @@ class OrderItem implements ModelInterface, ArrayAccess, \JsonSerializable, \Iter
             self::DEEMED_RESELLER_CATEGORY_CA_MPF,
             self::DEEMED_RESELLER_CATEGORY_AU_VOEC,
             self::DEEMED_RESELLER_CATEGORY_NZ_VOEC,
+            self::DEEMED_RESELLER_CATEGORY_SG_VOEC,
         ];
     }
     
