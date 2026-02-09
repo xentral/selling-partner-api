@@ -121,6 +121,13 @@ class Document
             return $contents;
         }
 
+        // If empty contents, early return
+        if (empty($contents)) {
+            $this->data = '';
+
+            return (string)$contents;
+        }
+
         // Document encodings depend on the target marketplace. English-language reports are
         // typically ISO-8859-1 encoded, which messes up the data when we read it directly via
         // SimpleXML or as a plain TAB/CSV, but the original encoding is required to parse XLSX
