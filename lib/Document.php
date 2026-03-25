@@ -123,6 +123,8 @@ class Document
 
         // If empty contents, early return
         if (empty($contents)) {
+            $this->data = '';
+
             return (string)$contents;
         }
 
